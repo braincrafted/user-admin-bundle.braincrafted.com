@@ -37,9 +37,9 @@
         "jms/di-extra-bundle":              "1.3.*",
         "twitter/bootstrap":                "2.3.*",
         "jquery/jquery":                    "1.9.*",
-        "braincrafted/bootstrap-bundle":    "dev-develop",
         "friendsofsymfony/user-bundle":     "*",
-        "braincrafted/user-admin-bundle":   "dev-develop"
+        "knplabs/knp-menu-bundle":          "dev-master",
+        "braincrafted/bootstrap-bundle":    "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [

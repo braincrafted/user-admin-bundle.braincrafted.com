@@ -9,3 +9,7 @@
 /composer.phar
 /web/css/*
 /web/js/*
+
+# Symlinked development packages (if you're a user, install via Composer)
+/src/Bc/Bundle/UserAdminBundle
+/src/Bc/Bundle/UserBundle
