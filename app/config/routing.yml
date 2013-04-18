@@ -17,6 +17,10 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
+bc_user_invite:
+    resource: "@BcUserBundle/Resources/config/routing/invite.xml"
+    prefix: /invite
+
 bc_user_admin:
     resource: "@BcUserAdminBundle/Resources/config/routing.yml"
     prefix: /admin/user
