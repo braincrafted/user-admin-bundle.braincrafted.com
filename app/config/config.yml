@@ -60,27 +60,17 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
 
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Bc\Bundle\UserBundle\Entity\User
-    registration:
-        form:
-            type: bc_user_registration
-            validation_groups:
-                - Default
-                - Registration
-                - RegistrationWithInvite
-
 bc_user:
+    db_driver:     orm  # Sets fos_user.db_driver
+    firewall_name: main # Sets fos_user.firewall_name
     registration:
-        enabled: true
-        invite_required: true
+        enabled:         true # If FALSE registration is not possible
+        invite_required: true # If TRUE invite is required for registration
     request_invite:
         form:
-            type: bc_user_request_invite
+            type:    bc_user_request_invite
             handler: bc_user.request_invite.form.handler.default
-            name: bc_user_request_invite_form
+            name:    bc_user_request_invite_form
             validation_groups:
                 - RequestInvite
 
