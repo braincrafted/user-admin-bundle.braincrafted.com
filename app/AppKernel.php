@@ -24,7 +24,8 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Bc\Bundle\BootstrapBundle\BcBootstrapBundle(),
             new Bc\Bundle\UserBundle\BcUserBundle(),
-            new Bc\Bundle\UserAdminBundle\BcUserAdminBundle()
+            new Bc\Bundle\UserAdminBundle\BcUserAdminBundle(),
+            new Bc\Bundle\DoctrineBundle\BcDoctrineBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
