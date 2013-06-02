@@ -21,6 +21,10 @@ bc_user_invite:
     resource: "@BcUserBundle/Resources/config/routing/invite.xml"
     prefix: /invite
 
+bc_user_profile:
+    resource: "@BcUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
 bc_user_admin:
     resource: "@BcUserAdminBundle/Resources/config/routing.yml"
     prefix: /admin/user
