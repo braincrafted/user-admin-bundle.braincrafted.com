@@ -10,11 +10,8 @@
 /web/css/*
 /web/js/*
 
-# Symlinked development packages (if you're a user, install via Composer)
-/src/Bc/Bundle/UserAdminBundle
-/src/Bc/Bundle/UserBundle
-/src/Bc/Bundle/DoctrineBundle
-
 /.tags
 /.tags_sorted_by_file
 
+*.sublime-project
+*.sublime-workspace
