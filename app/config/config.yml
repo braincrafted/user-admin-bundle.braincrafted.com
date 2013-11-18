@@ -49,7 +49,7 @@ doctrine:
         password: %database_password%
         charset:  UTF8
         types:
-            datetime: Bc\Bundle\DoctrineBundle\DBAL\Type\UTCDateTimeType
+            datetime: Braincrafted\Bundle\DoctrineBundle\DBAL\Type\UTCDateTimeType
 
     orm:
         auto_generate_proxy_classes: %kernel.debug%
@@ -63,7 +63,7 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
 
-bc_user:
+braincrafted_user:
     db_driver:     orm  # Sets fos_user.db_driver
     firewall_name: main # Sets fos_user.firewall_name
     registration:
@@ -71,9 +71,9 @@ bc_user:
         invite_required: true # If TRUE invite is required for registration
     request_invite:
         form:
-            type:    bc_user_request_invite
-            handler: bc_user.request_invite.form.handler.default
-            name:    bc_user_request_invite_form
+            type:    braincrafted_user_request_invite
+            handler: braincrafted_user.request_invite.form.handler.default
+            name:    braincrafted_user_request_invite_form
             validation_groups:
                 - RequestInvite
 
